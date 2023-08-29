@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Booklet is a note-taking website with a simple and beautiful user interface.">
+        <meta name="keywords" content="Booklet">
+
+        <!-- IMPORT CSS MAIN -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- IMPORT FONT AWESOME -->
+        <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="fonts/css/all.min.css">
+        <!-- IMPORT FAVICON -->
+        <link rel="shortcut icon" href="images/logo/Booklet__Logo_Icon/Booklet__Logo_Icon.svg" type="image/x-icon">
+        
+        <!-- TITLE -->
+        <title>Booklet</title>
+    </head>
+    <body>
+
+        <!-- NAVBAR -->
+        <!-- <li class="far fa-bars fa-fw" style="font-size: 18px;"></li> -->
+        <nav>
+            <ul>
+                <form action="" method="post">
+                    <span class="far fa-search"></span>
+                    <input type="search" name="" id="" placeholder="Search...">
+                </form>
+            </ul>
+            <ul>
+                <!-- BUTTON TOGGLE MODE -->
+                <div class="button-toggle-mode">
+                    <a href="javascript:void(0)" onclick="toggleMode()" class="far fa-moon faMoon" title="Switch Dark Mode"></a>
+                    <a href="javascript:void(0)" onclick="toggleMode()" class="far fa-sun faSun" title="Switch Bright Mode"></a>
+                </div>
+                
+                <!-- AVATAR USER DROPDOWN -->
+                <a href="javascript:void(0)" onclick="avatarUserDropdown()">
+                    <div class="avatar-user">
+                        <img src="images/avatar/avatar-2.jpg" alt="">
+                        <div>
+                            <p>Mahdi Rabiee</p>
+                            <p>Web Design</p>
+                        </div>
+                    </div>
+                    <div class="avatar-user-dropdown" id="avatarUserDropdown">
+                        <a href="">
+                            <div>
+                                <p>Mahdi Rabiee</p>
+                                <p>mrabiee175@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <hr>
+
+                        <a href=""><p><span class="far fa-user"></span> Account</p></a>
+                        <a href=""><p><span class="far fa-life-ring"></span> Support</p></a>
+                        <a href=""><p><span class="far fa-star"></span> Upgrade Account</p></a>
+
+                        <hr>
+
+                        <a href=""><p class="avatar-user-dropdown-item-active">Logout</p></a>
+                    </div>
+                </a>
+            </ul>
+        </nav>
+
+
+        <!-- MAIN -->
+        <main>
+            <!-- ASIDE LEFT -->
+            <aside class="aside-left">
+                <!-- LOGO -->
+                <a href="index.html">
+                    <img src="images/logo/Booklet__Logo_Main/Booklet__Logo.svg" alt="" class="aside-left-logo logoBright" draggable="false">
+                    <img src="images/logo/Booklet__Logo_Main/Booklet__Logo_Text_White.svg" alt="" class="aside-left-logo logoDark" draggable="false">
+                </a>
+
+                <!-- BUTTON ADD -->
+                <div class="button-add-box">
+                    <button type="button" class="far fa-add button-add" onclick="newNote()" title="New note"></button>
+                </div>
+
+                <!-- NEW NOTE -->
+                <div class="new-note" id="newNote">
+                    <li class="disc card-note-blue"></li>
+                    <li class="disc card-note-cyan"></li>
+                    <li class="disc card-note-purple"></li>
+                    <li class="disc card-note-red"></li>
+                    <li class="disc card-note-yellow"></li>
+                </div>
+            </aside>
+
+
+            <!-- ASIDE RIGHT -->
+            <aside class="aside-right">
+                <h2>Notes</h2>
+
+                <!-- CARD NOTES GRID -->
+                <div class="card-note-grid">
+                    <div class="card-note card-note-blue">
+                        <textarea name="" id="editNoteAction1" cols="30" rows="7" placeholder="Enter your new note here!"></textarea>
+                        <div>
+                            <p class="date-note">Aug 18, 2023 <span class="far fa-ellipsis-h MoreSettings" title="More settings" onclick=""></span></p>
+                            <li class="far fa-edit" title="Edit note" onclick="editNoteAction1()"></li>
+                        </div>
+                    </div>
+                    <div class="card-note card-note-cyan">
+                        <textarea name="" id="editNoteAction2" cols="30" rows="7" placeholder="Enter your new note here!"></textarea>
+                        <div>
+                            <p class="date-note">Aug 18, 2023 <span class="far fa-ellipsis-h MoreSettings" title="More settings" onclick=""></span></p>
+                            <li class="far fa-edit" title="Edit note" onclick="editNoteAction2()"></li>
+                        </div>
+                    </div>
+                    <div class="card-note card-note-purple">
+                        <textarea name="" id="editNoteAction3" cols="30" rows="7" placeholder="Enter your new note here!"></textarea>
+                        <div>
+                            <p class="date-note">Aug 19, 2023 <span class="far fa-ellipsis-h MoreSettings" title="More settings" onclick=""></span></p>
+                            <li class="far fa-edit" title="Edit note" onclick="editNoteAction3()"></li>
+                        </div>
+                    </div>
+                    <div class="card-note card-note-red">
+                        <textarea name="" id="editNoteAction4" cols="30" rows="7" placeholder="Enter your new note here!"></textarea>
+                        <div>
+                            <p class="date-note">Aug 19, 2023 <span class="far fa-ellipsis-h MoreSettings" title="More settings" onclick=""></span></p>
+                            <li class="far fa-edit" title="Edit note" onclick="editNoteAction4()"></li>
+                        </div>
+                    </div>
+                    <div class="card-note card-note-yellow">
+                        <textarea name="" id="editNoteAction5" cols="30" rows="7" placeholder="Enter your new note here!"></textarea>
+                        <div>
+                            <p class="date-note">Aug 19, 2023 <span class="far fa-ellipsis-h MoreSettings" title="More settings" onclick=""></span></p>
+                            <li class="far fa-edit" title="Edit note" onclick="editNoteAction5()"></li>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+
+
+        <!-- IMPORT JS -->
+        <script src="js/app.js"></script>
+    
+    </body>
+</html>
